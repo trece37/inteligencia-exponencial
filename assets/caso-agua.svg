@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">El movimiento y el ritmo de una investigación</title>
+  <desc id="desc">Líneas azules y cian sugieren corrientes de un fluido. Debajo, tres hitos conectados: anuncio, revisión y crítica. Es un esquema editorial original, no una simulación del resultado matemático.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061326"/><stop offset="1" stop-color="#050913"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#124890" stop-opacity=".44"/><stop offset="1" stop-color="#102e62" stop-opacity="0"/></radialGradient>
+    <linearGradient id="flow"><stop stop-color="#235bde" stop-opacity=".15"/><stop offset=".48" stop-color="#52e7ff"/><stop offset="1" stop-color="#3676ff" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="route" gradientUnits="userSpaceOnUse" x1="201" y1="461" x2="800" y2="461"><stop stop-color="#2873ff"/><stop offset="1" stop-color="#6ae4f7"/></linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#4378a6" stroke-opacity=".08" stroke-width="1"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <rect width="1000" height="600" rx="24" fill="url(#bg)"/>
+  <rect width="1000" height="600" rx="24" fill="url(#grid)"/>
+  <ellipse cx="538" cy="274" rx="442" ry="214" fill="url(#light)"/>
+  <g fill="none" stroke="url(#flow)" stroke-linecap="round">
+    <path d="M52 200C224 194 273 148 420 169S633 340 946 221" stroke-width="1.2" opacity=".34"/>
+    <path d="M52 217C221 209 289 157 437 184S640 354 946 236" stroke-width="1.2" opacity=".48"/>
+    <path d="M52 234C229 227 302 169 454 201S650 361 946 251" stroke-width="1.4" opacity=".68"/>
+    <path d="M52 251C230 244 319 181 472 220S667 367 946 266" stroke-width="1.7"/>
+    <path d="M52 268C245 264 339 197 490 241S682 370 946 281" stroke-width="2.2"/>
+    <path d="M52 285C255 288 363 218 510 261S697 374 946 296" stroke-width="2.8"/>
+    <path d="M52 302C261 311 383 242 529 284S716 373 946 311" stroke-width="1.9" opacity=".9"/>
+    <path d="M52 319C267 333 402 266 545 305S729 373 946 326" stroke-width="1.5" opacity=".7"/>
+    <path d="M52 336C285 352 422 290 560 325S743 375 946 341" stroke-width="1.3" opacity=".5"/>
+    <path d="M52 353C293 370 439 313 576 343S763 377 946 356" stroke-width="1.2" opacity=".3"/>
+  </g>
+  <g fill="none" stroke="#316bba" stroke-opacity=".24">
+    <ellipse cx="514" cy="276" rx="97" ry="46" transform="rotate(35 514 276)"/>
+    <ellipse cx="514" cy="276" rx="142" ry="63" transform="rotate(35 514 276)"/>
+    <ellipse cx="514" cy="276" rx="182" ry="79" transform="rotate(35 514 276)"/>
+  </g>
+  <circle cx="482" cy="239" r="18" fill="#59ddff" opacity=".25" filter="url(#glow)"/>
+  <circle cx="482" cy="239" r="4.5" fill="#9af2ff"/>
+  <circle cx="686" cy="356" r="3.5" fill="#63cbff"/>
+  <circle cx="280" cy="281" r="3" fill="#5da3ff"/>
+  <path d="M690 147h38" stroke="#ed58e6" stroke-width="3" stroke-linecap="round"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="55" y="65" fill="#76bcd5" font-size="16" letter-spacing="3">CIENCIA · PREGUNTAS ABIERTAS</text>
+    <text x="55" y="113" fill="#e9f3ff" font-size="38" font-weight="550" letter-spacing="-1">Entender el movimiento.</text>
+  </g>
+  <g>
+    <rect x="54" y="419" width="892" height="120" rx="16" fill="#0c1b30" fill-opacity=".88" stroke="#203b59"/>
+    <path d="M201 461H800" fill="none" stroke="url(#route)" stroke-width="1.7"/>
+    <circle cx="201" cy="461" r="18" fill="#2476ff" fill-opacity=".12" stroke="#438dff"/>
+    <circle cx="201" cy="461" r="5" fill="#63b8ff"/>
+    <circle cx="500" cy="461" r="18" fill="#32c7e7" fill-opacity=".12" stroke="#5ae1fa"/>
+    <circle cx="500" cy="461" r="5" fill="#8ceaff"/>
+    <circle cx="800" cy="461" r="18" fill="#a647c8" fill-opacity=".1" stroke="#c171e0"/>
+    <circle cx="800" cy="461" r="5" fill="#e17ae9"/>
+    <g font-family="Segoe UI,Arial,sans-serif" font-size="23" fill="#e9f3ff" text-anchor="middle">
+      <text x="201" y="507">Anuncio</text><text x="500" y="507">Revisión</text><text x="800" y="507">Crítica</text>
+    </g>
+  </g>
+  <text x="55" y="574" fill="#91a7bf" font-family="Segoe UI,Arial,sans-serif" font-size="14">Esquema editorial original · No es una simulación del resultado.</text>
+</svg>

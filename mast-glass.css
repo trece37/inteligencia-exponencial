@@ -1,0 +1,96 @@
+/* Cabecera sobre la portada: geometría compartida con --mast-height real.
+   Solo se activa en las dos páginas marcadas y con JavaScript disponible. */
+.js body[data-overlay-mast] > .mast {
+  margin-bottom:calc(-1 * var(--mast-height,96px));
+  background:transparent;
+  border-bottom-color:transparent;
+  box-shadow:none;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  transition:background-color 180ms ease,border-color 180ms ease,box-shadow 180ms ease,-webkit-backdrop-filter 180ms ease,backdrop-filter 180ms ease;
+}
+.js body[data-overlay-mast] > .mast.is-scrolled {
+  background:rgba(9,15,21,.88);
+  border-bottom-color:var(--line);
+  box-shadow:0 5px 22px #00000018;
+}
+@supports (background:color-mix(in srgb,#000 70%,transparent)) {
+  .js body[data-overlay-mast] > .mast.is-scrolled {
+    background:color-mix(in srgb,var(--nodo-bg,var(--hero-bg)) 78%,transparent);
+  }
+}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+  .js body[data-overlay-mast] > .mast.is-scrolled {
+    -webkit-backdrop-filter:blur(16px) saturate(130%);
+    backdrop-filter:blur(16px) saturate(130%);
+  }
+}
+.js body[data-overlay-mast] > .mast .brand-title,
+.js body[data-overlay-mast] > .mast .brand small {text-shadow:0 1px 8px #0009}
+.js body[data-overlay-mast] > .skip {z-index:60}
+
+/* El vídeo empieza en y=0. Solo el texto reserva el espacio de la cabecera. */
+.js body[data-overlay-mast] .hero[data-hero-intro] {
+  min-height:calc(930px + var(--mast-height,96px));
+}
+.js body[data-overlay-mast] .hero[data-hero-intro] .hero-image {inset:0}
+.js body[data-overlay-mast] .hero[data-hero-intro] .hero-copy {
+  padding-top:calc(var(--mast-height,96px) + 66px);
+}
+.js body[data-overlay-mast] .nodo-hero {
+  min-height:calc(730px + var(--mast-height,96px));
+}
+.js body[data-overlay-mast] .nodo-hero-copy {
+  padding-top:calc(var(--mast-height,96px) + 35px);
+}
+@media(min-width:1500px) {
+  .js body[data-overlay-mast] .hero[data-hero-intro] {
+    min-height:calc(990px + var(--mast-height,96px));
+  }
+}
+@media(max-width:760px) {
+  .js body[data-overlay-mast] > .mast {margin-bottom:calc(-1 * var(--mast-height,76px))}
+  .js body[data-overlay-mast] .hero[data-hero-intro] {min-height:100vh;min-height:100svh}
+  .js body[data-overlay-mast] .hero[data-hero-intro] .hero-copy {
+    padding-top:calc(var(--mast-height,76px) + 35px);
+  }
+  .js body[data-overlay-mast] .hero[data-hero-intro].has-mobile-intro .hero-copy {
+    padding-top:calc(var(--mast-height,76px) + 25px);
+  }
+  .js body[data-overlay-mast] .nodo-hero {min-height:0}
+  .js body[data-overlay-mast] .nodo-hero-copy {
+    padding-top:calc(var(--mast-height,76px) + 24px);
+    /* El mismo poster ya usado por picture: ninguna segunda descarga de vídeo.
+       La figura vertical y sus controles conservan su posición en el flujo. */
+    background-image:linear-gradient(180deg,#090e1038,#090e10d9 28%,var(--nodo-bg) 100%),url('assets/nodo-humano/portada-9x16.webp');
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
+  }
+}
+@media(max-width:360px) {
+  .js body[data-overlay-mast] .hero[data-hero-intro].has-mobile-intro .hero-copy {
+    padding-top:calc(var(--mast-height,76px) + 22px);
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .js body[data-overlay-mast] > .mast {transition:none}
+}
+@media(forced-colors:active) {
+  .js body[data-overlay-mast] > .mast,
+  .js body[data-overlay-mast] > .mast.is-scrolled {
+    background:Canvas;
+    border-bottom-color:ButtonText;
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+  }
+  .js body[data-overlay-mast] .nodo-hero-copy {background:none}
+}
+@media print {
+  .js body[data-overlay-mast] > .mast {margin-bottom:0}
+  .js body[data-overlay-mast] .hero[data-hero-intro],
+  .js body[data-overlay-mast] .nodo-hero {min-height:0}
+  .js body[data-overlay-mast] .hero[data-hero-intro] .hero-copy,
+  .js body[data-overlay-mast] .hero[data-hero-intro].has-mobile-intro .hero-copy,
+  .js body[data-overlay-mast] .nodo-hero-copy {padding-top:20px;background:none}
+}

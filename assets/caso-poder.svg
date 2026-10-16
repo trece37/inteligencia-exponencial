@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Una red de laboratorios, centros e instituciones</title>
+  <desc id="desc">Una esfera de líneas conecta cinco nodos: laboratorios, centros de cálculo, instituciones, usos y sociedad. Sugiere la dimensión global de las decisiones sobre IA. Es un esquema editorial original, no un mapa de mando o una alianza documentada.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07162a"/><stop offset="1" stop-color="#050913"/></linearGradient>
+    <radialGradient id="sphere"><stop stop-color="#163b72" stop-opacity=".7"/><stop offset=".7" stop-color="#12315e" stop-opacity=".35"/><stop offset="1" stop-color="#092039" stop-opacity=".05"/></radialGradient>
+    <radialGradient id="halo"><stop stop-color="#196bb8" stop-opacity=".25"/><stop offset="1" stop-color="#196bb8" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#477ba2" stroke-opacity=".075"/></pattern>
+    <linearGradient id="net"><stop stop-color="#2772ed"/><stop offset="1" stop-color="#6bd9ec"/></linearGradient>
+    <filter id="blur" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1000" height="600" rx="24" fill="url(#bg)"/><rect width="1000" height="600" rx="24" fill="url(#grid)"/>
+  <g font-family="Segoe UI,Arial,sans-serif"><text x="55" y="65" fill="#76bcd5" font-size="16" letter-spacing="3">SOCIEDAD · DECISIONES</text><text x="55" y="113" fill="#e9f3ff" font-size="38" font-weight="550" letter-spacing="-1">Más allá de una pantalla.</text></g>
+  <ellipse cx="500" cy="330" rx="377" ry="225" fill="url(#halo)"/>
+  <g transform="rotate(-13 500 330)">
+    <ellipse cx="500" cy="330" rx="285" ry="178" fill="url(#sphere)" stroke="#27507d" stroke-width="1.2"/>
+    <g fill="none" stroke="#346597" stroke-width="1" opacity=".65"><ellipse cx="500" cy="330" rx="100" ry="178"/><ellipse cx="500" cy="330" rx="212" ry="178"/><ellipse cx="500" cy="330" rx="285" ry="57"/><ellipse cx="500" cy="330" rx="285" ry="122"/><path d="M215 330H785M500 152V508"/></g>
+    <path d="M240 258C376 217 531 427 750 359" fill="none" stroke="#66d7eb" stroke-width="1.5" opacity=".5"/>
+    <path d="M335 189C469 240 551 452 677 457" fill="none" stroke="#387bd4" stroke-width="1.3" opacity=".6"/>
+  </g>
+  <g fill="none" stroke="url(#net)" stroke-width="1.4">
+    <path d="M243 217 423 275 741 215M423 275 590 365 777 437M590 365 275 437M423 275 544 188M275 437 544 188 777 437"/>
+  </g>
+  <path d="M590 365 741 215" fill="none" stroke="#d86bdd" stroke-width="1.5" opacity=".8"/>
+  <g fill="#70dff4"><circle cx="423" cy="275" r="7"/><circle cx="590" cy="365" r="7"/><circle cx="544" cy="188" r="5"/><circle cx="359" cy="362" r="3"/><circle cx="647" cy="276" r="3"/></g>
+  <circle cx="590" cy="365" r="22" fill="#76dff6" opacity=".2" filter="url(#blur)"/>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#e9f3ff" text-anchor="middle">
+    <rect x="82" y="186" width="220" height="62" rx="12" fill="#0d243d" stroke="#457eab"/><circle cx="105" cy="217" r="4" fill="#67d8ef"/><text x="195" y="225">Laboratorios</text>
+    <rect x="394" y="144" width="300" height="59" rx="12" fill="#0c213c" stroke="#3e6b9f"/><text x="544" y="181">Centros de cálculo</text>
+    <rect x="696" y="183" width="239" height="63" rx="12" fill="#0e2942" stroke="#5fa7c1"/><text x="815" y="223">Instituciones</text>
+    <rect x="95" y="408" width="233" height="61" rx="12" fill="#0c223b" stroke="#42799f"/><text x="211" y="446">Sociedad</text>
+    <rect x="724" y="406" width="182" height="61" rx="12" fill="#0c233d" stroke="#467ea7"/><text x="815" y="445">Usos</text>
+  </g>
+  <g><path d="M463 521h74" stroke="#64c9df" stroke-width="1.4"/><circle cx="500" cy="521" r="4" fill="#e774e9"/></g>
+  <text x="55" y="574" fill="#91a7bf" font-family="Segoe UI,Arial,sans-serif" font-size="14">Esquema editorial original · No representa un mapa de mando.</text>
+</svg>
