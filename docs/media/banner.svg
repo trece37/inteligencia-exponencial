@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="500" viewBox="0 0 1440 500" role="img" aria-labelledby="title desc">
+  <title id="title">Inteligencia Exponencial · Con Manel</title>
+  <desc id="desc">Portada azul noche con un horizonte de luz y nodos conectados en cian y dorado. Comprender el cambio. Crear con criterio.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071b30"/><stop offset="1" stop-color="#040b14"/></linearGradient>
+    <linearGradient id="light"><stop stop-color="#60dbff"/><stop offset=".6" stop-color="#739cff"/><stop offset="1" stop-color="#f0bf75"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#127bb3" stop-opacity=".42"/><stop offset="1" stop-color="#127bb3" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gold"><stop stop-color="#df9a37" stop-opacity=".2"/><stop offset="1" stop-color="#df9a37" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1440" height="500" rx="24" fill="url(#bg)"/>
+  <ellipse cx="1120" cy="245" rx="370" ry="260" fill="url(#halo)"/>
+  <ellipse cx="1370" cy="450" rx="400" ry="220" fill="url(#gold)"/>
+  <g fill="none" stroke="#6bcaff" stroke-opacity=".15">
+    <circle cx="1150" cy="240" r="175"/><circle cx="1150" cy="240" r="145"/>
+    <ellipse cx="1150" cy="240" rx="175" ry="63" transform="rotate(-35 1150 240)"/>
+    <ellipse cx="1150" cy="240" rx="63" ry="175" transform="rotate(-35 1150 240)"/>
+  </g>
+  <g fill="none" stroke="url(#light)" stroke-width="2">
+    <path d="M990 294 1062 170 1150 240 1245 125 1308 296 1150 240 1168 385 990 294 1308 296 1062 170 1245 125" opacity=".7"/>
+    <path d="M835 447C1010 390 1110 495 1430 360" opacity=".45"/>
+    <path d="M800 466C1020 410 1160 500 1440 405" opacity=".2"/>
+  </g>
+  <g fill="#84e6ff"><circle cx="990" cy="294" r="6"/><circle cx="1062" cy="170" r="6"/><circle cx="1150" cy="240" r="10"/></g>
+  <g fill="#efc78c"><circle cx="1245" cy="125" r="6"/><circle cx="1308" cy="296" r="6"/><circle cx="1168" cy="385" r="6"/></g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="76" y="92" fill="#7edbfa" font-size="17" letter-spacing="5">INTELIGENCIA ARTIFICIAL. VIDA REAL.</text>
+    <text x="70" y="205" fill="#f1f7ff" font-size="76" font-weight="700" letter-spacing="-3">Inteligencia</text>
+    <text x="70" y="287" fill="#f1f7ff" font-size="76" font-weight="700" letter-spacing="-3">Exponencial<tspan fill="#72ddfa">.</tspan></text>
+    <text x="76" y="340" fill="#bccddd" font-size="25">Comprender el cambio. Crear con criterio.</text>
+    <path d="M76 383H805" stroke="url(#light)"/>
+    <text x="76" y="431" fill="#eff7ff" font-size="17" letter-spacing="4">CON MANEL</text>
+    <text x="316" y="431" fill="#ddbe8f" font-size="17" letter-spacing="2">APRENDER · IMAGINAR · EMPRENDER</text>
+  </g>
+</svg>
